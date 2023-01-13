@@ -7,151 +7,31 @@
   <title>Jogo da Velha</title>
   <link rel="icon" href="img/hashtag.ico">
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-
-  <div class="first-screen" id="home">
-    <form class="container" action="">
-      <h1>Bem vindo ao jogo da velha!</h1>
-      <h3>Informe os nomes dos jogadores</h3>
-      <div class="inputs">
-
-        <label for="">Jogador 1</label>
-        <input value="" type="text" class="input1" name="input1" id="input1">
-        
-        <label for="">Jogador 2</label>
-        <input value="" type="text" class="input2" name="input2" id="input2">
-        
-        <button class="btn" onclick="begin()">Avançar</button>
-      
-      </div>
-    </form>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h1 class="turn" id="turn"></h1>
-<div class="table-screen" id="game">
-
-  <div class="player" id="p1">
-
-    <h1 id="name1" value="Player1">Player1</h1>
-
-    <div class="signal" id="signalp1">
-      <img class="spc-circle" src="img/circle-draw.png" alt="Bolinhalinha">
-      <img class="spc-x" src="img/x-draw.png" alt="Xiszinhozinho">
-
-      
-    </div>
-  </div>
-
-  
-  <div class="table">
-    <div class="row">
-      <div class="spc" id="spc1">
-        <img class="spc-circle" src="img/circle-draw.png" alt="Bolinhalinha">
-        <img class="spc-x" src="img/x-draw.png" alt="Xiszinhozinho">
-
-      </div>
-      <div class="divisionr1"></div>
-      <div class="spc" id="spc2">
-        <img class="spc-circle" src="img/circle-draw.png" alt="Bolinhalinha">
-        <img class="spc-x" src="img/x-draw.png" alt="Xiszinhozinho">
-
-      </div>
-      <div class="divisionr1"></div>
-      <div class="spc" id="spc3">
-        <img class="spc-circle" src="img/circle-draw.png" alt="Bolinhalinha">
-        <img class="spc-x" src="img/x-draw.png" alt="Xiszinhozinho">
-
-      </div>
-    </div>
+  <main>
+    <!-- <h1>JOGO DA VELHA</h1> -->
     
-    <div class="divisiont"></div>
-
-    <div class="row">
-      <div class="spc" id="spc4">
-        <img class="spc-circle" src="img/circle-draw.png" alt="Bolinhalinha">
-        <img class="spc-x" src="img/x-draw.png" alt="Xiszinhozinho">
-
+    <h2 class="currentPlayer"></h2>
+    <hr />
+    <div class="game">
+      <div class="row">
+        <button data-i="1"></button>
+        <button data-i="2"></button>
+        <button data-i="3"></button>
       </div>
-      <div class="divisionr2"></div>
-      <div class="spc" id="spc5">
-        <img class="spc-circle" src="img/circle-draw.png" alt="Bolinhalinha">
-        <img class="spc-x" src="img/x-draw.png" alt="Xiszinhozinho">
-
+      <div class="row">
+        <button data-i="4"></button>
+        <button data-i="5"></button>
+        <button data-i="6"></button>
       </div>
-      <div class="divisionr2"></div>
-      <div class="spc" id="spc6">
-        <img class="spc-circle" src="img/circle-draw.png" alt="Bolinhalinha">
-        <img class="spc-x" src="img/x-draw.png" alt="Xiszinhozinho">
-
-      </div>  
-    </div>
-    
-    <div class="divisiont"></div>
-
-    <div class="row">
-      <div class="spc" id="spc7">
-        <img class="spc-circle" src="img/circle-draw.png" alt="Bolinhalinha">
-        <img class="spc-x" src="img/x-draw.png" alt="Xiszinhozinho">
-
-      </div>
-      <div class="divisionr3"></div>
-      <div class="spc" id="spc8">
-        <img class="spc-circle" src="img/circle-draw.png" alt="Bolinhalinha">
-        <img class="spc-x" src="img/x-draw.png" alt="Xiszinhozinho">
-
-      </div>
-      <div class="divisionr3"></div>
-      <div class="spc" id="spc9">
-        <img class="spc-circle" src="img/circle-draw.png" alt="Bolinhalinha">
-        <img class="spc-x" src="img/x-draw.png" alt="Xiszinhozinho">
-
+      <div class="row">
+        <button data-i="7"></button>
+        <button data-i="8"></button>
+        <button data-i="9"></button>
       </div>
     </div>
-  </div>
-  
-  <div class="player" id="p2">
-
-    <h1 id="name2" value="Player2">Player2</h1>
-
-    <div class="signal" id="signalp2">
-      <img class="spc-circle" src="img/circle-draw.png" alt="Bolinhalinha">
-      <img class="spc-x" src="img/x-draw.png" alt="Xiszinhozinho">
-    </div>
-  </div>
-  
-</div>
+  </main>
+  <script src="script.js"></script>
 </body>
-<script type="text/javascript" src="script.js"></script>
 </html>
