@@ -51,14 +51,19 @@ function check() {
 
   for (pos of positions) {
     if (pos.every((item) => items.includes(item))) {
-      alert("O JOGADOR '" + playerLastMove + "' GANHOU!");
+      Swal.fire({
+        title: playerLastMove,
+        text: 'VENCEU!',
+        })
       init();
       return;
     }
   }
 
   if (selected.filter((item) => item).length === 9) {
-    alert("DEU EMPATE!");
+    Swal.fire({
+      title: 'EMPATE!',
+      })
     init();
     return;
   }
