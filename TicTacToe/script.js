@@ -1,7 +1,7 @@
 const currentPlayer = document.querySelector(".currentPlayer");
 
 let selected;
-let player = "X";
+let player = "❌";
 
 let positions = [
   [1, 2, 3],
@@ -37,12 +37,12 @@ function newMove(e) {
     check();
   }, [100]);
 
-  player = player === "X" ? "O" : "X";
+  player = player === "❌" ? "⭕" : "❌";
   currentPlayer.innerHTML = `JOGADOR DA VEZ: ${player}`;
 }
 
 function check() {
-  let playerLastMove = player === "X" ? "O" : "X";
+  let playerLastMove = player === "❌" ? "⭕" : "❌";
 
   const items = selected
     .map((item, i) => [item, i])
@@ -62,9 +62,14 @@ function check() {
 
   if (selected.filter((item) => item).length === 9) {
     Swal.fire({
-      title: 'EMPATE!',
+      title: 'DEU VELHA!👵🏼',
       })
     init();
     return;
   }
 }
+
+document.getElementById("open-settings-btn").addEventListener('click', function(e){
+  document.querySelector(".settings-box").classList.toggle('box-active')
+  document.querySelector(".settings-btn").classList.toggle('btn-active')
+});
