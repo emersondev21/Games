@@ -75,7 +75,7 @@ document.getElementById("open-settings-btn").addEventListener('click', function(
 });
 
 document.getElementById("nighly-btn").addEventListener('click', function(e){
-  document.querySelector(".screen").classList.toggle('bg-nighly-active')
-  // document.getElementById("cells").classList.toggle('cell-nighly-active')
-  // document.querySelector(".settings-btn").classList.toggle('btn-active')
+  document.querySelector(".screen").classList.toggle('nighly-theme-active')
+  document.querySelector(".settings-box").classList.toggle('nighly-theme-active')
+  document.querySelector(".settings-box").classList.toggle('lighly-theme-active')
 });

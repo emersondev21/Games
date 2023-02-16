@@ -55,10 +55,10 @@ hr {
   width: 100px;
   height: 100px;
   margin: 0px;
-  border:solid 1px #2cb898;
+  border:none;
   cursor: pointer;
   font-size: 50px;
-  background: #f7f7f7;
+  background: #ecf0f1;
   outline: none;
   border-radius: 10px;
 }
@@ -107,6 +107,7 @@ hr {
 
 .settings-btn img{
   width: 35px;
+  /* overflow: hidden; */
 }
 
 .settings-box button{
@@ -115,6 +116,10 @@ hr {
   align-items: center;
 }
 
+.settings-box button:hover{
+  -webkit-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
 .settings-box button img{
   width: 30px;
   height: 30px;
@@ -126,23 +131,16 @@ hr {
   transition: linear;
 }
 
-.btn1{
-  transition-delay: .2s;
-}
-
-.btn2{
-  transition-delay: .5s;
-}
-
-.bg-nighly-active{
+.nighly-theme-active{
   background-color: #121212;
   color: white;
+  transition: linear .2s;
 }
 
-.cell-nighly-active{
-  background-color: #242424;
+.nighly-theme-active button #moon{
+  display: none;
 }
 
-button{
-  background-color: red;
+.lighly-theme-active button #sun{
+  display: none;
 }
