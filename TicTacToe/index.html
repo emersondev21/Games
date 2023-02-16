@@ -7,14 +7,17 @@
   <title>Jogo da Velha</title>
   <link rel="icon" href="img/hashtag.ico">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src="JS/sweetalert.js"></script>
 </head>
 <body>
+  <div class="container"></div>
   <main>
     <!-- <h1>JOGO DA VELHA</h1> -->
     
     <h2 class="currentPlayer"></h2>
-    <hr />
+    <hr/>
     <div class="game">
       <div class="row">
         <button data-i="1"></button>
@@ -33,6 +36,9 @@
       </div>
     </div>
   </main>
-  <script src="script.js"></script>
+  <div class="container">
+    <button class="settings-btn"><img src="img/icons8-configurações-48.png"/></button>
+  </div>
 </body>
+<script src="script.js"></script>
 </html>
