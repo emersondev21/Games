@@ -9,7 +9,7 @@
   transition: all .2s;
 }
 
-body {
+.screen {
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -132,4 +132,17 @@ hr {
 
 .btn2{
   transition-delay: .5s;
+}
+
+.bg-nighly-active{
+  background-color: #121212;
+  color: white;
+}
+
+.cell-nighly-active{
+  background-color: #242424;
+}
+
+button{
+  background-color: red;
 }
